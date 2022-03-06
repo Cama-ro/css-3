@@ -1,0 +1,55 @@
+div.counter {
+  background-color: black;
+  color: white;
+  width: 350px;
+  height: 150px;
+  display: grid;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+
+  animation: counter 10s linear infinite;
+}
+
+div.counter::after {
+  font: 300 100px system-ui;
+  color: white;
+  content: counter(count);
+  margin-bottom: 10px;
+}
+
+@keyframes counter {
+  0% {
+    counter-increment: count 10;
+  }
+  10% {
+    counter-increment: count 9;
+  }
+  20% {
+    counter-increment: count 8;
+  }
+  30% {
+    counter-increment: count 7;
+  }
+  40% {
+    counter-increment: count 6;
+  }
+  50% {
+    counter-increment: count 5;
+  }
+  60% {
+    counter-increment: count 4;
+  }
+  70% {
+    counter-increment: count 3;
+  }
+  80% {
+    counter-increment: count 2;
+  }
+  90% {
+    counter-increment: count 1;
+  }
+  100% {
+    counter-increment: count 10;
+  }
+}
